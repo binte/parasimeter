@@ -1,0 +1,15 @@
+#page {
+	width: 980px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+#stop img {
+	width: 7%; 
+}
+
+#counters_box > div {
+
+	width: 50%;
+	float: left;
+}
