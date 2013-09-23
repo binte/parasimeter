@@ -22,8 +22,9 @@ $(function() {
 	});
 
 	$('#reset').on("click", function() {
-		$('#counter_total').runner('reset');
-		$('#counter_parasiting').runner('reset');
-		$('#counter_working').runner('reset');
+		$('#counter_total').runner('reset',true);
+		$('#counter_parasiting').runner('reset',true);
+		$('#counter_working').runner('reset',true);
+
 	});
 })
