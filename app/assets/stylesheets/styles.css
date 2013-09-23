@@ -1,4 +1,4 @@
-#page {
+.main_content {
 	width: 980px;
 	text-align: center;
 	margin: 0 auto;
@@ -9,7 +9,26 @@
 }
 
 #counters_box > div {
+	width: 50%;
+	float: left;
+}
 
+#chart {
+	width: 30%;
+	float: left;
+}
+
+#content {
+	width: 70%;
+	float: left;
+}
+
+#score_text {
+	width: 50%;
+	float: left;
+}
+
+#score_value {
 	width: 50%;
 	float: left;
 }

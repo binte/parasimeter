@@ -25,6 +25,5 @@ $(function() {
 		$('#counter_total').runner('reset',true);
 		$('#counter_parasiting').runner('reset',true);
 		$('#counter_working').runner('reset',true);
-
 	});
 })
