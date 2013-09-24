@@ -1,5 +1,5 @@
 Parasimeter::Application.routes.draw do
   root to: 'pages#home'
   
-  get '/result', to: 'pages#result'
+  post '/result', to: 'pages#gen_chart'
 end

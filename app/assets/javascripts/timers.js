@@ -19,6 +19,33 @@ $(function() {
 		$('#counter_total').runner('stop');
 		$('#counter_parasiting').runner('stop');
 		$('#counter_working').runner('stop');
+		var parasiteTime = $('#counter_parasiting').runner('info').formattedTime;
+		var workTime = $('#counter_working').runner('info').formattedTime;
+		
+		var request = $.ajax({
+		  url: "/result",
+		  type: "POST",
+		  data: { work_time: workTime,
+						  parasite_time: parasiteTime
+			 			},
+		  dataType: "json",
+		  success: function(data){
+				$("body").html(data.html);
+				var ctx = document.getElementById('pie_chart').getContext('2d');
+				var chart_data = [
+					{
+						value: parseFloat(data.parasiteTime),
+						color: '#F38630'
+					},
+					{
+						value: parseFloat(data.workTime),
+						color: '#F00000'
+					}
+				]
+				var chart = new Chart(ctx).Pie(chart_data);
+			}
+		});
+		
 	});
 
 	$('#reset').on("click", function() {
