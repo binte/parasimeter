@@ -141,6 +141,7 @@ h2 {
 	line-height: 110px;
 	cursor: pointer;
 	margin-top: -35px;
+	color: #333;
 }
 
 #stop:hover {
