@@ -12,7 +12,7 @@ body {
 	width: 7%; 
 }
 
-#counters_box > div {
+#partial_box > div {
 	width: 50%;
 	float: left;
 }
@@ -66,5 +66,7 @@ h2 {
 #counters_box {
 	width: 640px;
 	height: 260px;
-	background-color: #454545
+	background-color: #454545;
+	text-align: center;
+	margin:0 auto;
 }
