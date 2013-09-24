@@ -1,3 +1,7 @@
+body {
+	background-color: #333
+}
+
 .main_content {
 	width: 980px;
 	text-align: center;
@@ -31,4 +35,25 @@
 #score_value {
 	width: 50%;
 	float: left;
+}
+h1 {
+	font-family: 'Alfa Slab One', cursive;
+	color: #fff;
+	font-size: 24px;
+}
+
+h2 {
+	font-family: 'Alfa Slab One', cursive;
+	color: #f2c215;
+	font-size: 40px;
+}
+
+#slogan {
+	width: 600px;
+	text-align: center;
+	margin: 0 auto
+}
+
+#reset {
+	display: none;
 }
