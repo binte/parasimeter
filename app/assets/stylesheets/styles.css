@@ -57,6 +57,7 @@ h2 {
 #header {
 	padding-bottom: 30px;
 	padding-top: 20px;
+	cursor: pointer;
 }
 
 #counters_box {
@@ -108,18 +109,35 @@ h2 {
 	text-align: center;
 	margin: 0 auto;
 	line-height: 30px;
+	cursor: pointer;
 }
 
 .button:hover {
 	background-color: #f9d65a;
 }
 
-.button_active {
+.button_active,
+.button_active:hover {
 	background-color: #fff;
 }
 
+#stop {
+	display: block;
+	font-family: 'Rokkitt', serif;
+	font-size: 30px;
+	width: 110px;
+	height: 110px;
+	background-color: #f2c215;
+	border-radius: 55px;
+	text-align: center;
+	margin: 0 auto;
+	line-height: 110px;
+	cursor: pointer;
+}
 
-
+#stop:hover {
+	background-color: #f9d65a;
+}
 
 
 
