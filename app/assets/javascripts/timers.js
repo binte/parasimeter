@@ -19,7 +19,7 @@ $(function() {
 		$('#text_working .button').removeClass('button_active');
 	});
 
-	$('#done').on("click", function() {
+	$('#stop').on("click", function() {
 		$('#counter_total').runner('stop');
 		$('#counter_parasiting').runner('stop');
 		$('#counter_working').runner('stop');
@@ -52,7 +52,9 @@ $(function() {
 				var chart = new Chart(ctx).Doughnut(chart_data,	opt);
 				
 				var percentage = parseFloat(data.parasiteTime) / (parseFloat(data.parasiteTime) + parseFloat(data.workTime));
-				console.log((percentage * 100).toFixed(2) + "%");
+				var formattedPercentage = (percentage * 100).toFixed(2) + "%";
+				
+				$("#percentage").html(formattedPercentage);
 			}
 		});
 	});

@@ -117,3 +117,13 @@ h2 {
 .button_active {
 	background-color: #fff;
 }
+
+#chart {
+	position:	relative;
+}
+
+#percentage {
+	position:	absolute;
+	left:	42%;
+	top:	44%;
+}
