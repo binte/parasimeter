@@ -8,10 +8,6 @@ body {
 	margin: 0 auto;
 }
 
-#stop img {
-	width: 7%; 
-}
-
 #partial_box > div {
 	width: 50%;
 	float: left;
@@ -69,6 +65,7 @@ h2 {
 	background-color: #454545;
 	text-align: center;
 	margin:0 auto;
+	border-radius: 10px;
 }
 
 #total_text {
@@ -81,26 +78,45 @@ h2 {
 #counter_total {
 	font-family: 'Alfa Slab One', cursive;
 	font-size: 36px;
-	color: #fff
+	color: #fff;
 }
 
 #counter_working {
 	font-family: 'Alfa Slab One', cursive;
 	font-size: 60px;
-	color: #fff
+	color: #fff;
 }
 
 #counter_parasiting {
 	font-family: 'Alfa Slab One', cursive;
 	font-size: 60px;
-	color: #fff
+	color: #fff;
 }
 
+#partial_box {
+	overflow: hidden;
+}
 
+.button{
+	display: block;
+	font-family: 'Rokkitt', serif;
+	font-size: 18px;
+	color: #333;
+	width: 240px;
+	height: 30px;
+	background-color: #f2c215;
+	text-align: center;
+	margin: 0 auto;
+	line-height: 30px;
+}
 
+.button:hover {
+	background-color: #f9d65a;
+}
 
-
-
+.button_active {
+	background-color: #fff;
+}
 
 
 
