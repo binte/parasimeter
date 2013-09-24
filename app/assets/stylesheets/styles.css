@@ -51,9 +51,20 @@ h2 {
 #slogan {
 	width: 600px;
 	text-align: center;
-	margin: 0 auto
+	margin: 0 auto;
 }
 
 #reset {
 	display: none;
+}
+
+#header {
+	padding-bottom: 30px;
+	padding-top: 20px;
+}
+
+#counters_box {
+	width: 640px;
+	height: 260px;
+	background-color: #454545
 }
