@@ -23,29 +23,34 @@ $(function() {
 		var workTime = $('#counter_working').runner('info').formattedTime;
 		
 		var request = $.ajax({
+			
 		  url: "/result",
 		  type: "POST",
 		  data: { work_time: workTime,
 						  parasite_time: parasiteTime
 			 			},
 		  dataType: "json",
+
 		  success: function(data){
 				$("#yield").html(data.html);
-				var ctx = document.getElementById('pie_chart').getContext('2d');
+				var ctx = document.getElementById('doughnut_chart').getContext('2d');
 				var chart_data = [
 					{
 						value: parseFloat(data.parasiteTime),
-						color: '#F38630'
+						color: '#F2C215'
 					},
 					{
 						value: parseFloat(data.workTime),
-						color: '#F00000'
+						color: '#FFF'
 					}
 				]
-				var chart = new Chart(ctx).Pie(chart_data);
+				var opt = {segmentShowStroke : false, animateScale: true};
+				var chart = new Chart(ctx).Doughnut(chart_data,	opt);
+				
+				var percentage = parseFloat(data.parasiteTime) / (parseFloat(data.parasiteTime) + parseFloat(data.workTime));
+				console.log((percentage * 100).toFixed(2) + "%");
 			}
 		});
-		
 	});
 
 	$('#reset').on("click", function() {
