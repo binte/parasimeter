@@ -30,7 +30,7 @@ $(function() {
 			 			},
 		  dataType: "json",
 		  success: function(data){
-				$("body").html(data.html);
+				$("#yield").html(data.html);
 				var ctx = document.getElementById('pie_chart').getContext('2d');
 				var chart_data = [
 					{
