@@ -12,7 +12,7 @@ body {
 	width: 7%; 
 }
 
-#counters_box > div {
+#partial_box > div {
 	width: 50%;
 	float: left;
 }
@@ -66,5 +66,24 @@ h2 {
 #counters_box {
 	width: 640px;
 	height: 260px;
-	background-color: #454545
+	background-color: #454545;
+	text-align: center;
+	margin:0 auto;
 }
+
+#total_text {
+	font-family: 'Rokkitt', serif;
+	font-size: 18px;
+	padding-top: 20px;
+	color: #fff;
+}
+
+#counter_total {
+	font-family: 'Alfa Slab One', cursive;
+	font-size: 36px;
+	color: #fff
+}
+
+
+
+
