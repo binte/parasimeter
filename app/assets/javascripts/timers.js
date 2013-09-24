@@ -7,15 +7,19 @@ $(function() {
 		$('#counter_total').runner('start');
 		$('#counter_working').runner('start');
 		$('#counter_parasiting').runner('stop');
+		$('#text_working .button').addClass('button_active');
+		$('#text_parasiting .button').removeClass('button_active');
 	});
 
 	$('#text_parasiting').on("click", function() {
 		$('#counter_total').runner('start');
 		$('#counter_parasiting').runner('start');
 		$('#counter_working').runner('stop');
+		$('#text_parasiting .button').addClass('button_active');
+		$('#text_working .button').removeClass('button_active');
 	});
 
-	$('#stop').on("click", function() {
+	$('#done').on("click", function() {
 		$('#counter_total').runner('stop');
 		$('#counter_parasiting').runner('stop');
 		$('#counter_working').runner('stop');
