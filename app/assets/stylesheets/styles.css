@@ -14,7 +14,7 @@ body {
 }
 
 #chart {
-	width: 30%;
+	width: 200px;
 	float: left;
 	position:	relative;
 }
@@ -124,9 +124,13 @@ h2 {
 }
 
 #percentage {
-	position:	absolute;
-	left:	42%;
-	top:	44%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 200px;
+	text-align: center;
+	height: 200px;
+	line-height: 200px;
 }
 
 #stop {
