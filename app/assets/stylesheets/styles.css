@@ -129,7 +129,7 @@ h2 {
 }
 
 #stop {
-	display: block;
+	display: none;
 	font-family: 'Rokkitt', serif;
 	font-size: 30px;
 	width: 110px;

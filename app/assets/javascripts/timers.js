@@ -9,6 +9,7 @@ $(function() {
 		$('#counter_parasiting').runner('stop');
 		$('#text_working .button').addClass('button_active');
 		$('#text_parasiting .button').removeClass('button_active');
+		$('#stop').fadeIn("slow");
 	});
 
 	$('#text_parasiting').on("click", function() {
@@ -17,6 +18,7 @@ $(function() {
 		$('#counter_working').runner('stop');
 		$('#text_parasiting .button').addClass('button_active');
 		$('#text_working .button').removeClass('button_active');
+		$('#stop').fadeIn("slow");
 	});
 
 	$('#stop').on("click", function() {
@@ -48,7 +50,7 @@ $(function() {
 						color: '#FFF'
 					}
 				]
-				var opt = {segmentShowStroke : false, animateScale: true};
+				var opt = {segmentShowStroke : false, animateScale: true, percentageInnerCutout : 80};
 				var chart = new Chart(ctx).Doughnut(chart_data,	opt);
 				
 				var percentage = 0, formattedPercentage;
