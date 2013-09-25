@@ -1,3 +1,7 @@
+* {
+	box-sizing: border-box;
+}
+
 body {
 	background-color: #333
 }
@@ -13,30 +17,37 @@ body {
 	float: left;
 }
 
-#chart {
-	width: 200px;
+#chart_box {
+	width: 37.5%;
 	float: left;
+	padding-top: 25px;
+}
+
+#chart {
+	width: 150px;
+	height:	150px;
 	position:	relative;
+	margin: auto;
 }
 
 #content {
-	width: 70%;
+	width: 62.5%;
 	float: left;
+	padding-top: 25px;
 }
 
 #score_text {
-	width: 50%;
-	float: left;
+	font-size: 18px;
+	font-family: 'Rokkitt', serif;
+	color: #FFF;
+	text-align: left;
 }
 
 #score_value {
-	width: 50%;
-	float: left;
-}
-h1 {
 	font-family: 'Alfa Slab One', cursive;
-	color: #fff;
-	font-size: 24px;
+	font-size: 36px;
+	color: #FFF;
+	text-align: left;
 }
 
 h2 {
@@ -63,8 +74,11 @@ h2 {
 }
 
 #counters_box {
-	width: 640px;
 	height: 260px;
+}
+
+.main_box {
+	width: 640px;
 	background-color: #454545;
 	text-align: center;
 	margin:0 auto;
@@ -123,14 +137,24 @@ h2 {
 	background-color: #fff;
 }
 
+#results {	
+	width:	640px;
+	background-color: #454545;
+	border-radius:	10px;
+	overflow:	hidden;
+}
+
 #percentage {
 	position: absolute;
 	left: 0;
 	top: 0;
-	width: 200px;
+	width: 150px;
 	text-align: center;
-	height: 200px;
-	line-height: 200px;
+	height: 150px;
+	line-height: 150px;
+	font-family: 'Alfa Slab One', cursive;
+	font-size:	24px;
+	color: #F2C215;
 }
 
 #stop {
