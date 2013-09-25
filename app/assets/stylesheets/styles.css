@@ -63,6 +63,10 @@ h2 {
 	margin: 0 auto;
 }
 
+#slogan h2 {
+	height: 108px;
+}
+
 #reset {
 	display: none;
 }

@@ -1,4 +1,11 @@
 $(function() {
+	var messages_element=$("#slogan h2");
+	var messages={
+		working:"Yeah... right! Stop cheating, I know you are parasiting!",
+		parasiting:"Stop parasiting and go build a better world!",
+		pause:"..."
+	};
+
 	$('#counter_total').runner();
 	$('#counter_working').runner().on('runnerStart', startTotal).on('runnerStop', stopTotal);
 	$('#counter_parasiting').runner().on('runnerStart', startTotal).on('runnerStop', stopTotal);
@@ -10,6 +17,7 @@ $(function() {
 	function stopTotal() {
 		if($('#counter_working').runner('info').running == false && $('#counter_parasiting').runner('info').running == false) {
 			$('#counter_total').runner('stop');
+			messages_element.text(messages.pause);
 		}
 	}
 
@@ -19,6 +27,9 @@ $(function() {
 		$('#text_working .button').addClass('button_active');
 		$('#text_parasiting .button').removeClass('button_active');
 		$('#stop').fadeIn("slow");
+		if($('#counter_working').runner('info').running) {
+			messages_element.text(messages.working);
+		}
 	});
 
 	$('#text_parasiting').on("click", function() {
@@ -27,6 +38,9 @@ $(function() {
 		$('#text_parasiting .button').addClass('button_active');
 		$('#text_working .button').removeClass('button_active');
 		$('#stop').fadeIn("slow");
+		if($('#counter_parasiting').runner('info').running) {
+			messages_element.text(messages.parasiting);
+		}
 	});
 
 	$('#stop').on("click", function() {
