@@ -51,8 +51,17 @@ $(function() {
 				var opt = {segmentShowStroke : false, animateScale: true};
 				var chart = new Chart(ctx).Doughnut(chart_data,	opt);
 				
-				var percentage = parseFloat(data.parasiteTime) / (parseFloat(data.parasiteTime) + parseFloat(data.workTime));
-				var formattedPercentage = (percentage * 100).toFixed(2) + "%";
+				var percentage = 0, formattedPercentage;
+				
+				if( parseFloat(data.parasiteTime) == 0 & parseFloat(data.workTime) == 0 ) {
+					
+					formattedPercentage = percentage.toFixed(2) + "%";
+				} 
+				else {
+				
+					percentage = parseFloat(data.parasiteTime) / (parseFloat(data.parasiteTime) + parseFloat(data.workTime));
+					formattedPercentage = (percentage * 100).toFixed(2) + "%";
+				}
 				
 				$("#percentage").html(formattedPercentage);
 			}
