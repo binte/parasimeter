@@ -112,6 +112,7 @@ h2 {
 
 #partial_box {
 	overflow: hidden;
+	background:url(separador.png) center bottom no-repeat;
 }
 
 .button{

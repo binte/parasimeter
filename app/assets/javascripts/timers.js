@@ -1,11 +1,20 @@
 $(function() {
 	$('#counter_total').runner();
-	$('#counter_working').runner();
-	$('#counter_parasiting').runner();
+	$('#counter_working').runner().on('runnerStart', startTotal).on('runnerStop', stopTotal);
+	$('#counter_parasiting').runner().on('runnerStart', startTotal).on('runnerStop', stopTotal);
+
+	function startTotal() {
+		$('#counter_total').runner('start');
+	}
+
+	function stopTotal() {
+		if($('#counter_working').runner('info').running == false && $('#counter_parasiting').runner('info').running == false) {
+			$('#counter_total').runner('stop');
+		}
+	}
 
 	$('#text_working').on("click", function() {
-		$('#counter_total').runner('start');
-		$('#counter_working').runner('start');
+		$('#counter_working').runner('toggle');
 		$('#counter_parasiting').runner('stop');
 		$('#text_working .button').addClass('button_active');
 		$('#text_parasiting .button').removeClass('button_active');
@@ -13,8 +22,7 @@ $(function() {
 	});
 
 	$('#text_parasiting').on("click", function() {
-		$('#counter_total').runner('start');
-		$('#counter_parasiting').runner('start');
+		$('#counter_parasiting').runner('toggle');
 		$('#counter_working').runner('stop');
 		$('#text_parasiting .button').addClass('button_active');
 		$('#text_working .button').removeClass('button_active');
@@ -67,4 +75,5 @@ $(function() {
 		$('#counter_parasiting').runner('reset',true);
 		$('#counter_working').runner('reset',true);
 	});
+
 })
