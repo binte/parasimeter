@@ -54,9 +54,10 @@ $(function() {
 				var chart = new Chart(ctx).Doughnut(chart_data,	opt);
 				
 				var	percentage = parseFloat(data.parasiteTime) / (parseFloat(data.parasiteTime) + parseFloat(data.workTime));
-				var formattedPercentage = (percentage * 100).toFixed(2) + "%";
+				var formattedPercentage = (percentage * 100).toFixed(0) + "%";
 				
 				$("#percentage").html(formattedPercentage);
+				$("#score_value").html(data.parasiteTime);
 			}
 		});
 	});
