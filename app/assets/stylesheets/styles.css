@@ -57,8 +57,9 @@ body {
 	font-family: 'Alfa Slab One', cursive;
 	color: #F2C215;
 	font-size: 36px;
-	float: left;
 	margin-bottom: 20px;
+	margin-right: 20px;
+	text-align: left;
 }
 
 .big_button {
@@ -285,12 +286,8 @@ h2 {
 	margin: 0 auto;
 }
 
-
-
-
-
-
-
-
-
-
+#arrow {
+	height: 100px;
+	background: url(arrow.png) center no-repeat;
+	margin-top: -35px;
+}

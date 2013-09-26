@@ -6,20 +6,6 @@ $(function() {
 		pause:"DON'T STOP ME NOW!"
 	};
 	var hero_shot_element=$("#hero_shot");
-	var hero_shots={
-		a:"a",
-		b:"b",
-		c:"c",
-		d:"d",
-		e:"e",
-		f:"f",
-		g:"g",
-		h:"h",
-		i:"i",
-		j:"j",
-		k:"k",
-		l:"l"
-	}
 
 	$('#counter_total').runner();
 	$('#counter_working').runner().on('runnerStart', startTotal).on('runnerStop', stopTotal);
