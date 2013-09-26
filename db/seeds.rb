@@ -6,6 +6,8 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
+Phrase.all.map(&:destroy)
+
 #100% TRABALHO
 Phrase.create(text: "You liar...", min: 0, max: 0)
 Phrase.create(text: "AHAHA Nice try! Go fuck someone else dude!", min: 0, max: 0)

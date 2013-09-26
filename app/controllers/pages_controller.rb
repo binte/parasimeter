@@ -16,7 +16,12 @@ class PagesController < ApplicationController
 	  percentage = ( parasite_time / (work_time + parasite_time) * 100).to_i
 	  @phrase = Phrase.where("min <= ? AND max >= ?", percentage, percentage).sample
 	  
-	  render json: { html: render_to_string("result", layout: false, locals: { phrase: @phrase }), workTime: work_time, parasiteTime: parasite_time}
+	  render json: { 
+	    html: render_to_string("result", layout: false, locals: { phrase: @phrase }), 
+	    workTime: work_time, 
+	    parasiteTime: parasite_time,
+	    percentage: percentage
+	  }
 	end
 	
 end

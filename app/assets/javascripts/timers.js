@@ -103,8 +103,7 @@ $(function() {
 				var opt = {segmentShowStroke : false, animateScale: true, percentageInnerCutout : 85};
 				var chart = new Chart(ctx).Doughnut(chart_data,	opt);
 				
-				var	percentage = parseFloat(data.parasiteTime) / (parseFloat(data.parasiteTime) + parseFloat(data.workTime));
-				var formattedPercentage = (percentage * 100).toFixed(0) + "%";
+				var formattedPercentage = data.percentage + "%";
 				
 				$("#percentage").html(formattedPercentage);
 				$("#score_value").html(data.parasiteTime);
