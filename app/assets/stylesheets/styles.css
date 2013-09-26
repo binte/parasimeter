@@ -263,6 +263,7 @@ h2 {
 	text-align: left;
 	text-decoration: none;
 }
+
 #follow a:hover {
 	background: url(followover.png) right top no-repeat;
 	color: #f2c215;
@@ -290,4 +291,16 @@ h2 {
 	height: 100px;
 	background: url(arrow.png) center no-repeat;
 	margin-top: -35px;
+}
+
+#soon {
+	text-align: center;
+	margin: 0 auto;
+}
+
+#merch {
+	height: 340px;
+	background: url(merchandising.jpg) center no-repeat;
+	margin-top: 50px;
+	margin-bottom: 75px;
 }
