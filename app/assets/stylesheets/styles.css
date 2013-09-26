@@ -198,26 +198,22 @@ h2 {
 	background-color: #f9d65a;
 }
 
-#follow_text {
+#follow a {
+	background: url(follow.png) right top no-repeat;
+	width: 115px;
+	height:40px;
+	display: block;
 	font-family: 'Rokkitt', serif;
 	font-size: 18px;
 	color:#555;
 	float:left;
 	line-height: 40px;
+	text-align: left;
+	text-decoration: none;
 }
-
-#follow_icon {
-	float:right;
-	width: 40px;
-}
-#follow_icon a {
-	background: url(follow.png) right top no-repeat;
-	width: 40px;
-	height:40px;
-	display: block;
-}
-#follow_icon a:hover {
-	background: url(followover.png);
+#follow a:hover {
+	background: url(followover.png) right top no-repeat;
+	color: #f2c215;
 }
 
 #follow {
