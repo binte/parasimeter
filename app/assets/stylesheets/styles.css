@@ -78,9 +78,17 @@ body {
 	background-image: url(share.png);
 }
 
+#fb_share:hover {
+	background: url(shareover.png);
+}
+
 #start_again {
 	background-image: url(startagain.png);
 	margin: 0 auto;
+}
+
+#start_again:hover {
+	background: url(startagainover.png);	
 }
 
 #score_value {
@@ -175,7 +183,7 @@ h2 {
 	background:url(separador.png) center bottom no-repeat;
 }
 
-.button{
+.button {
 	display: block;
 	font-family: 'Rokkitt', serif;
 	font-size: 18px;
