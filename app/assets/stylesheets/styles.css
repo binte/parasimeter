@@ -72,6 +72,7 @@ h2 {
 	width: 600px;
 	text-align: center;
 	margin: 0 auto;
+	cursor: default;
 }
 
 #slogan h2 {
@@ -107,24 +108,28 @@ h2 {
 	font-size: 18px;
 	padding-top: 20px;
 	color: #fff;
+	cursor: default;
 }
 
 #counter_total {
 	font-family: 'Alfa Slab One', cursive;
 	font-size: 36px;
 	color: #fff;
+	cursor: default;
 }
 
 #counter_working {
 	font-family: 'Alfa Slab One', cursive;
 	font-size: 60px;
 	color: #fff;
+	cursor: default;
 }
 
 #counter_parasiting {
 	font-family: 'Alfa Slab One', cursive;
 	font-size: 60px;
 	color: #fff;
+	cursor: default;
 }
 
 #partial_box {
