@@ -110,6 +110,7 @@ h2 {
 	width: 600px;
 	text-align: center;
 	margin: 0 auto;
+	cursor: default;
 }
 
 #slogan h2 {
@@ -123,7 +124,9 @@ h2 {
 #header {
 	padding-bottom: 30px;
 	padding-top: 20px;
-	cursor: pointer;
+	width: 640px;
+	margin: 0 auto;
+	position: relative;
 }
 
 #counters_box {
@@ -143,24 +146,28 @@ h2 {
 	font-size: 18px;
 	padding-top: 20px;
 	color: #fff;
+	cursor: default;
 }
 
 #counter_total {
 	font-family: 'Alfa Slab One', cursive;
 	font-size: 36px;
 	color: #fff;
+	cursor: default;
 }
 
 #counter_working {
 	font-family: 'Alfa Slab One', cursive;
 	font-size: 60px;
 	color: #fff;
+	cursor: default;
 }
 
 #counter_parasiting {
 	font-family: 'Alfa Slab One', cursive;
 	font-size: 60px;
 	color: #fff;
+	cursor: default;
 }
 
 #partial_box {
@@ -234,13 +241,41 @@ h2 {
 	background-color: #f9d65a;
 }
 
-#follow {
-	height: 40px;
-	margin: 0 auto;
-	text-align: center;
-	cursor: pointer;
+#follow a {
+	background: url(follow.png) right top no-repeat;
+	width: 115px;
+	height:40px;
+	display: block;
+	font-family: 'Rokkitt', serif;
+	font-size: 18px;
+	color:#555;
+	float:left;
+	line-height: 40px;
+	text-align: left;
+	text-decoration: none;
+}
+#follow a:hover {
+	background: url(followover.png) right top no-repeat;
+	color: #f2c215;
 }
 
+#follow {
+	cursor: pointer;
+	position: absolute;
+	height: 40px;
+	width: 115px;
+	right: 0px;
+	top: 43px;
+}
+
+#logo {
+	background: url(logo.png) center bottom no-repeat;
+	cursor: pointer;
+	width: 210px;
+	height: 77px;
+	display: block;
+	margin: 0 auto;
+}
 
 
 

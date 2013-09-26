@@ -1,9 +1,9 @@
 $(function() {
 	var messages_element=$("#slogan h2");
 	var messages={
-		working:"Yeah... right! Stop cheating, I know you are parasiting!",
-		parasiting:"Stop parasiting and go build a better world!",
-		pause:"..."
+		working:"Yeah... right! Stop cheating, I'm watching you!",
+		parasiting:"Bitch, stop parasiting and go build a better world!",
+		pause:"DON'T STOP ME NOW!"
 	};
 	var hero_shot_element=$("#hero_shot");
 	var hero_shots={

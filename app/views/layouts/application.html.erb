@@ -12,12 +12,13 @@
 
 	<div id="page" class="main_content">
 	  <div id="header">
-	  	<%= image_tag("logo.png") %>
+	  	<%= link_to "", root_url, id: "logo" %>
+	  	<div id="follow">
+		  	<a href="http://www.facebook.com/parasimeter">follow us</a>
+ 	  	</div>
 	  </div>
 	  
-	  <div id="follow">
-	  	follow us <%= image_tag("follow.png") %>
- 	  </div>
+	  
 	
 		<div id="yield">
 			<%= yield %>			
