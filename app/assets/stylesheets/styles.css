@@ -36,11 +36,22 @@ body {
 	padding-top: 25px;
 }
 
-#score_text {
+.small_text {
 	font-size: 18px;
 	font-family: 'Rokkitt', serif;
 	color: #FFF;
 	text-align: left;
+}
+
+#hero_shot_text {
+	padding-top: 20px;
+}
+
+#hero_shot {
+	font-family: 'Alfa Slab One', cursive;
+	color: #F2C215;
+	font-size: 36px;
+	float: left;
 }
 
 #score_value {
