@@ -5,6 +5,21 @@ $(function() {
 		parasiting:"Stop parasiting and go build a better world!",
 		pause:"..."
 	};
+	var hero_shot_element=$("#hero_shot");
+	var hero_shots={
+		a:"a",
+		b:"b",
+		c:"c",
+		d:"d",
+		e:"e",
+		f:"f",
+		g:"g",
+		h:"h",
+		i:"i",
+		j:"j",
+		k:"k",
+		l:"l"
+	}
 
 	$('#counter_total').runner();
 	$('#counter_working').runner().on('runnerStart', startTotal).on('runnerStop', stopTotal);
@@ -24,8 +39,8 @@ $(function() {
 	$('#text_working').on("click", function() {
 		$('#counter_working').runner('toggle');
 		$('#counter_parasiting').runner('stop');
-		$('#text_working .button').addClass('button_active');
 		$('#text_parasiting .button').removeClass('button_active');
+		$('#text_working .button').toggleClass('button_active');
 		$('#stop').fadeIn("slow");
 		if($('#counter_working').runner('info').running) {
 			messages_element.text(messages.working);
@@ -35,7 +50,7 @@ $(function() {
 	$('#text_parasiting').on("click", function() {
 		$('#counter_parasiting').runner('toggle');
 		$('#counter_working').runner('stop');
-		$('#text_parasiting .button').addClass('button_active');
+		$('#text_parasiting .button').toggleClass('button_active');
 		$('#text_working .button').removeClass('button_active');
 		$('#stop').fadeIn("slow");
 		if($('#counter_parasiting').runner('info').running) {

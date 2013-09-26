@@ -137,9 +137,12 @@ h2 {
 	background-color: #f9d65a;
 }
 
-.button_active,
-.button_active:hover {
+.button_active {
 	background-color: #fff;
+}
+
+.button_active:hover {
+	background-color: #f9d65a;
 }
 
 #results {	
@@ -181,3 +184,21 @@ h2 {
 #stop:hover {
 	background-color: #f9d65a;
 }
+
+#follow {
+	height: 40px;
+	margin: 0 auto;
+	text-align: center;
+	cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
