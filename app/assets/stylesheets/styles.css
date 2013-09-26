@@ -212,6 +212,15 @@ h2 {
 	float:right;
 	width: 40px;
 }
+#follow_icon a {
+	background: url(follow.png) right top no-repeat;
+	width: 40px;
+	height:40px;
+	display: block;
+}
+#follow_icon a:hover {
+	background: url(follow-hover.png);
+}
 
 #follow {
 	position: absolute;
@@ -222,8 +231,12 @@ h2 {
 }
 
 #logo {
+	background: url(logo.png) center bottom no-repeat;
 	cursor: pointer;
-	text-align: center;
+	width: 210px;
+	height: 77px;
+	display: block;
+	margin: 0 auto;
 }
 
 
