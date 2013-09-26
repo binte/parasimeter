@@ -5,6 +5,19 @@ $(function() {
 		parasiting:"Bitch, stop parasiting and go build a better world!",
 		pause:"DON'T STOP ME NOW!"
 	};
+
+	var workingcopy_element=$("#text_working .button");
+	var workingcopy={
+		active:"STOP WORKING!",
+		resume:"GO ON WORKING!"
+	};
+
+	var parasitingcopy_element=$("#text_parasiting .button");
+	var parasitingcopy={
+		active:"STOP PARASITING!",
+		resume:"GO ON PARASITING!"
+	}
+
 	var hero_shot_element=$("#hero_shot");
 	var hero_shots={
 		a:"a",
@@ -44,6 +57,13 @@ $(function() {
 		$('#stop').fadeIn("slow");
 		if($('#counter_working').runner('info').running) {
 			messages_element.text(messages.working);
+			workingcopy_element.text(workingcopy.active);
+		}
+		else{
+			workingcopy_element.text(workingcopy.resume);
+		}
+		if($('#counter_parasiting').runner('info').time != 0) {
+			parasitingcopy_element.text(parasitingcopy.resume);
 		}
 	});
 
@@ -55,6 +75,13 @@ $(function() {
 		$('#stop').fadeIn("slow");
 		if($('#counter_parasiting').runner('info').running) {
 			messages_element.text(messages.parasiting);
+			parasitingcopy_element.text(parasitingcopy.active);
+		}
+		else{
+			parasitingcopy_element.text(parasitingcopy.resume);
+		}
+		if($('#counter_working').runner('info').time != 0) {
+			workingcopy_element.text(workingcopy.resume);
 		}
 	});
 
