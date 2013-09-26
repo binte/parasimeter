@@ -85,7 +85,9 @@ h2 {
 #header {
 	padding-bottom: 30px;
 	padding-top: 20px;
-	cursor: pointer;
+	width: 640px;
+	margin: 0 auto;
+	position: relative;
 }
 
 #counters_box {
@@ -196,13 +198,33 @@ h2 {
 	background-color: #f9d65a;
 }
 
-#follow {
-	height: 40px;
-	margin: 0 auto;
-	text-align: center;
-	cursor: pointer;
+#follow_text {
+	cursor: default;
+	font-family: 'Rokkitt', serif;
+	font-size: 18px;
+	color:#555;
+	float:left;
+	line-height: 40px;
 }
 
+#follow_icon {
+	cursor:pointer;
+	float:right;
+	width: 40px;
+}
+
+#follow {
+	position: absolute;
+	height: 40px;
+	width: 115px;
+	right: 0px;
+	top: 43px;
+}
+
+#logo {
+	cursor: pointer;
+	text-align: center;
+}
 
 
 
