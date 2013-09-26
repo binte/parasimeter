@@ -17,8 +17,15 @@ body {
 	float: left;
 }
 
-#chart_box {
+.left_side {
 	width: 37.5%;
+}
+
+.right_side {
+	width: 62.5%;
+}
+
+#chart_box {
 	float: left;
 	padding-top: 25px;
 }
@@ -31,7 +38,6 @@ body {
 }
 
 #content {
-	width: 62.5%;
 	float: left;
 	padding-top: 25px;
 }
@@ -52,6 +58,29 @@ body {
 	color: #F2C215;
 	font-size: 36px;
 	float: left;
+	margin-bottom: 20px;
+}
+
+.big_button {
+	width: 100px;
+	height: 100px;
+	display: block;
+	border-radius: 50px;
+	clear: left;
+}
+
+#buttons {
+	overflow: hidden;
+	clear: left;
+}
+
+#fb_share {
+	background-image: url(share.png);
+}
+
+#start_again {
+	background-image: url(startagain.png);
+	margin: 0 auto;
 }
 
 #score_value {
@@ -59,6 +88,15 @@ body {
 	font-size: 36px;
 	color: #FFF;
 	text-align: left;
+}
+
+#start_again_box {
+	float: left;
+	text-align: center;
+}
+
+#fb_share_box {
+	float: left;
 }
 
 h2 {

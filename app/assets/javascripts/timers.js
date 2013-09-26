@@ -87,7 +87,7 @@ $(function() {
 						color: '#FFF'
 					}
 				]
-				var opt = {segmentShowStroke : false, animateScale: true, percentageInnerCutout : 80};
+				var opt = {segmentShowStroke : false, animateScale: true, percentageInnerCutout : 85};
 				var chart = new Chart(ctx).Doughnut(chart_data,	opt);
 				
 				var	percentage = parseFloat(data.parasiteTime) / (parseFloat(data.parasiteTime) + parseFloat(data.workTime));
