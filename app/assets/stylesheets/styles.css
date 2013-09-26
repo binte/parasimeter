@@ -199,7 +199,6 @@ h2 {
 }
 
 #follow_text {
-	cursor: default;
 	font-family: 'Rokkitt', serif;
 	font-size: 18px;
 	color:#555;
@@ -208,7 +207,6 @@ h2 {
 }
 
 #follow_icon {
-	cursor:pointer;
 	float:right;
 	width: 40px;
 }
@@ -223,6 +221,7 @@ h2 {
 }
 
 #follow {
+	cursor: pointer;
 	position: absolute;
 	height: 40px;
 	width: 115px;
