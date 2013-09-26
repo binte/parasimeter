@@ -40,6 +40,7 @@ body {
 #content {
 	float: left;
 	padding-top: 25px;
+	cursor: default;
 }
 
 .small_text {
@@ -228,6 +229,7 @@ h2 {
 	font-family: 'Alfa Slab One', cursive;
 	font-size:	24px;
 	color: #F2C215;
+	cursor: default;
 }
 
 #stop {
@@ -296,6 +298,7 @@ h2 {
 #soon {
 	text-align: center;
 	margin: 0 auto;
+	cursor: default;
 }
 
 #merch {
